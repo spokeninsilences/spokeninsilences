@@ -1,16 +1,29 @@
-## Hi there 👋
+# Spoken in Silences
 
-<!--
-**spokeninsilences/spokeninsilences** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A quiet thread of emotion woven through yarn, code, and color.  
+This portfolio is a sanctuary for handcrafted design, abstract expression, and heartfelt storytelling.  
+Each page speaks softly — in textures, in pauses, in sound, in silences.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## ✨ Vision
+Spoken in Silences is more than a website — it is a living gallery.  
+Here, abstract art and handcrafted items are presented with clarity, harmony, and protection.  
+Every element reflects a balance of technical precision and emotional resonance.
+
+---
+
+## 🛡️ Licensing
+© 2025 Charita Dudrick. All rights reserved.  
+Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+This means the work may be shared with credit, but not altered or used commercially.
+
+---
+
+## 🌐 Explore
+spokeninsilences.com
+- [Etsy](https://www.etsy.com/shop/spokeninsilences) — Handcrafted items coming soon  
+- [Instagram](https://www.instagram.com/spokeninsilences) — Visual storytelling in progress  
+- [Pinterest](https://www.pinterest.com/spokeninsilences) — Inspiration boards  
+- [Facebook](https://www.facebook.com/spokeninsilences) — Community updates  
+- [YouTube](https://www.youtube.com/@SpokeninSilences) — Creative process and tutorials
