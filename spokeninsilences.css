@@ -5,13 +5,13 @@ body {
   padding: 0;
   font-family: 'Times Roman', serif;
   }
+
 footer {
   text-align: center;
   font-size: 0.9em;
-  color: #666;
+  color: #ccc;
   padding: 20px;
-  border-top: 1px solid #ccc;
-}
+ 
 /* ===== Pages ====== */
 
 .home-page .home-page-content {
@@ -574,5 +574,6 @@ body.contact-page .social-links {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 
