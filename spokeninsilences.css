@@ -11,7 +11,7 @@ footer {
   font-size: 0.9em;
   color: #ccc;
   padding: 20px;
- 
+}
 /* ===== Pages ====== */
 
 .home-page .home-page-content {
@@ -574,6 +574,7 @@ body.contact-page .social-links {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 
 
