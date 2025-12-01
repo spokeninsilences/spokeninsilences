@@ -1,5 +1,9 @@
 # Spoken in Silences
 
+This site showcases my artwork, handcrafted items, and web development projects.  
+It’s a space where minimalism meets meaning — curated with care, protected with intention.
+
+
 A quiet thread of emotion woven through yarn, code, and color.  
 This portfolio is a sanctuary for handcrafted design, abstract expression, and heartfelt storytelling.  
 Each page speaks softly — in textures, in pauses, in sound, in silences.
