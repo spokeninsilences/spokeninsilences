@@ -72,7 +72,7 @@ footer {
   text-align: center;
 }
 .home-page .social-links {
-  position: fixed;
+  position: static;
   display: flex;
   top: 400px;
   left: 10px;
@@ -256,6 +256,7 @@ height: 140px;
     padding: 10px;
   }
 }
+
 
 
 
