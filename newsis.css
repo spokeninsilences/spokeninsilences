@@ -71,6 +71,13 @@ footer {
   margin-bottom: 10px;
   text-align: center;
 }
+.home-page .social-links {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  flex-direction: column;
+  gap: 15px;
+}
 
 /* ===== Banner Styles ===== */
 .banner {
@@ -248,3 +255,4 @@ height: 140px;
     padding: 10px;
   }
 }
+
