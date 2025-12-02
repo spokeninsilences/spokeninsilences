@@ -460,7 +460,7 @@ nav a {
 #formFeedback {
   margin-top: 1em;
   font-weight: bold;
-  color: var(--accent-color); /* matches your theme */
+  color: var(--accent-color); 
 }
 
 
@@ -494,42 +494,6 @@ body.contact-page .social-links {
 
 
 /* ===== Media Queries ===== */
-
-@media (max-width: 768px) {
-  .banner {
-    font-size: 1.5rem; /* Slightly smaller on tablets and phones */
-    padding: 15px;
-    word-spacing: 5px;
-  }
-  .content {
-	  padding-left: 1rem; /* Reduce left padding for smaller screens */
-  }
-  .circle-link {
-	  width: 40px;
-	  height: 40px;
-	  line-height: 40px;
-	  font-size: 1rem;
-  }
-
-  .home-page .home-page-content {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
-  }
-
-  .home-page .artist-image,
-  .home-page .artwork-display {
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .home-page .artist-img,
-  .home-page .artwork-img {
-    max-width: 90%;
-    height: auto;
-  }
-}
 
 @media (max-width: 480px) {
   .banner {
@@ -567,6 +531,40 @@ body.contact-page .social-links {
   }  
 }
 
+@media (max-width: 768px) {
+  .banner {
+    font-size: 1.5rem; /* Slightly smaller on tablets and phones */
+    padding: 15px;
+    word-spacing: 5px;
+  }
+  .content {
+	  padding-left: 1rem; /* Reduce left padding for smaller screens */
+  }
+  .circle-link {
+	  width: 40px;
+	  height: 40px;
+	  line-height: 40px;
+	  font-size: 1rem;
+  }
+.home-page .home-page-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .home-page .artist-image,
+  .home-page .artwork-display {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .home-page .artist-img,
+  .home-page .artwork-img {
+    max-width: 90%;
+    height: auto;
+  }
+}
 
 /* Two-column layout on larger screens */
 @media (min-width: 900px) {
@@ -574,6 +572,7 @@ body.contact-page .social-links {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 
 
