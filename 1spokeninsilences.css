@@ -575,6 +575,36 @@ body.contact-page .social-links {
   .home-page .artwork-img {
     max-width: 90%;
     height: auto;
+	   /* stop left-shifting the whole page */
+  .home-page .home-page-content {
+    padding-left: 0 !important;
+  }
+
+  /* make all images scale to fit mobile screens */
+  .image-frame img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* allow text column to shrink */
+  .home-page .artist-description {
+    width: 100% !important;
+  }
+
+  /* fix social icons overflowing */
+  .social-links {
+    position: static !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  /* shrink frame padding */
+  .image-frame {
+    padding: 10px;
   }
 }
 
@@ -621,4 +651,5 @@ body.contact-page .social-links {
     padding: 10px;
   }
 }
+
 
