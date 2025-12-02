@@ -1,30 +1,4 @@
-	/* ===== Global Styles ===== */
-body {
-  background-color:#999DA0;
-  margin: 0;
-  padding: 0;
-  font-family: 'Times Roman', serif;
-  }
 
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #ccc;
-  padding: 20px;
-}
-/* ===== Pages ====== */
-
-.home-page .home-page-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  gap: 10px;
-  align-items: start;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 100px;
-}
 
 
 .divider {
@@ -480,72 +454,53 @@ body.contact-page .social-links {
 
 
 /* ===== Media Queries ===== */
-/* ===== Base (mobile-first defaults, ~0–480px) ===== */
-.banner {
-  font-size: 1.2rem;
-  padding: 10px;
-  word-spacing: 2px;
-}
 
-.content {
-  padding-left: 0.5rem;
-}
-
-.circle-link {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  font-size: 0.9rem;
-}
-
-.art-item,
-.baskets-item {
-  width: 100px;
-}
-
-.art-thumb {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.baskets-thumb {
-  width: 100px;
-  height: 140px;
-}
-
-/* ===== Tablets (~≥600px) ===== */
-@media (min-width: 600px) {
+@media (max-width: 480px) {
   .banner {
-    font-size: 1.3rem;
-    padding: 12px;
-    word-spacing: 3px;
+    font-size: 1.2rem;
+    padding: 10px;
+    word-spacing: 2px;
   }
-
   .content {
-    padding-left: 0.75rem;
+	  padding-left: 0.5rem;
   }
-
   .circle-link {
-    width: 38px;
-    height: 38px;
-    line-height: 38px;
-    font-size: 1rem;
+	  width: 35px;
+	  height: 35px;
+	  line-height: 35px;
+	  font-size: 0.9rem;
   }
 }
 
-/* ===== Larger tablets / small desktops (~≥768px) ===== */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+  .art-item {
+    width: 100px;
+  }
+  .art-thumb {
+	  width: 100px;
+	  height:100px;
+	  object-fit: cover;
+  }
+  
+  .baskets-item {
+    width: 100px;
+  }
+
+  .baskets-thumb {
+    width: 100px;
+    height: 140px;
+  }  
+}
+
+@media (max-width: 768px) {
   .banner {
     font-size: 1.5rem;
     padding: 15px;
     word-spacing: 5px;
   }
-
   .content {
     padding-left: 1rem;
   }
-
   .circle-link {
     width: 40px;
     height: 40px;
@@ -558,7 +513,7 @@ body.contact-page .social-links {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
-    padding-left: 0;
+    padding-left: 0; /* remove forced left padding */
   }
 
   /* Make images responsive */
@@ -584,8 +539,7 @@ body.contact-page .social-links {
   }
 }
 
-/* ===== Medium desktops (~≥900px) ===== */
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .social-icons {
     position: static;
     display: flex;
