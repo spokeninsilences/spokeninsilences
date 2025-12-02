@@ -73,7 +73,7 @@ footer {
 }
 .home-page .social-links {
   position: fixed;
-  top: 80px;
+  top: 200px;
   left: 10px;
   flex-direction: column;
   gap: 15px;
@@ -255,6 +255,7 @@ height: 140px;
     padding: 10px;
   }
 }
+
 
 
 
