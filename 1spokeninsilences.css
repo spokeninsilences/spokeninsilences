@@ -1,6 +1,5 @@
 	/* ===== Global Styles ===== */
-* { box-sizing: border-box; }
-img { max-width: 100%; height: auto; display: block; }
+
 
 
 body {
@@ -651,5 +650,6 @@ body.contact-page .social-links {
     padding: 10px;
   }
 }
+
 
 
