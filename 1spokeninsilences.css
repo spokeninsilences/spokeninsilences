@@ -1,4 +1,8 @@
 	/* ===== Global Styles ===== */
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+
+
 body {
   background-color:#999DA0;
   margin: 0;
@@ -617,3 +621,4 @@ body.contact-page .social-links {
     padding: 10px;
   }
 }
+
