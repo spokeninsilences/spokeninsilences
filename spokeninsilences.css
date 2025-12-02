@@ -385,6 +385,36 @@ nav a {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(255, 200, 150, 0.4);
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  background-color: #fffaf0;
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #FFFFE3;
+  color: #333;
+}
+
 /* ======Bat Styles======= */
 
 .bats-page {
@@ -545,6 +575,7 @@ body.contact-page .social-links {
     margin: 20px 0;
   }
 }
+
 
 
 
