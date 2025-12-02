@@ -153,10 +153,31 @@ footer {
 
 /* Extra small screens first */
 @media (max-width: 480px) {
-  .banner { font-size: 1.2rem; word-spacing: 2px; }
-  .nav-menu a { display: block; margin: 5px 0; }
+  .banner { 
+  font-size: 1.2rem; 
+  word-spacing: 2px; 
+    }
+  .nav-menu a { 
+  display: block;
+  margin: 5px 0; }
 }
-
+@media (max-width: 600px) { 
+  .art-item { 
+  width: 100px; 
+  } 
+  .art-thumb { 
+  width: 100px; 
+  height:100px; 
+object-fit: cover; 
+  } 
+.baskets-item {
+  width: 100px;
+} 
+  .baskets-thumb {
+width: 100px; 
+height: 140px;
+  }
+}
 /* Tablets and small laptops */
 @media (max-width: 768px) {
   .banner { font-size: 1.5rem; padding: 15px; word-spacing: 5px; }
@@ -184,8 +205,46 @@ footer {
 }
 
 /* Larger screens */
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .music-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+/* ===== Mobile Fixes ===== */
+
+@media (max-width: 768px) {
+
+  /* stop left-shifting the whole page */
+  .home-page .home-page-content {
+    padding-left: 0 !important;
+  }
+
+  /* make all images scale to fit mobile screens */
+  .image-frame img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* allow text column to shrink */
+  .home-page .artist-description {
+    width: 100% !important;
+  }
+
+  /* fix social icons overflowing */
+  .social-links {
+    position: static !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  /* shrink frame padding */
+  .image-frame {
+    padding: 10px;
   }
 }
