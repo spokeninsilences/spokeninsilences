@@ -111,27 +111,18 @@ footer {
 
 
 /*======= Hats And Bands ======*/
-/*=====Table====*/
 
-
-.hat-table {
-  width: 100%;
-  border-collapse: collapse;
+.hat-item.image-frame {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
   text-align: center;
 }
-.hat-table td {
-  padding: 1rem;
-  border: 1px solid #e2e8f0; /* light border */
-}
-.hat-table img {
-  max-width: 100%;
+
+.hat-item img {
+  max-width: 400px;
   height: auto;
-  border-radius: 8px;
-}
-.hat-table p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #475569;
+  display: block;
 }
 
 /* ===== Banner Styles ===== */
@@ -554,5 +545,6 @@ body.contact-page .social-links {
     margin: 20px 0;
   }
 }
+
 
 
