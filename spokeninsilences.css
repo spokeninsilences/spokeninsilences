@@ -546,9 +546,12 @@ body.contact-page .social-links {
   }
 }
 
-/* Two-column layout on larger screens */
 @media (max-width: 900px) {
-  .music-grid {
-    grid-template-columns: 1fr 1fr;
+  .social-icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
   }
 }
+
