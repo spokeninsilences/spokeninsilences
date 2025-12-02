@@ -30,7 +30,7 @@ footer {
 .divider {
   border: none;
   height: 2px;
-  background-color: #FFFFE3; /* or your accent color */
+  background-color: #FFFFE3; 
   margin: 1rem 0;
   display: block;
   width: 100%;
@@ -554,4 +554,5 @@ body.contact-page .social-links {
     margin: 20px 0;
   }
 }
+
 
