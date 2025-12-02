@@ -422,38 +422,9 @@ nav a {
 
 
 
-#music {
-  text-align: center;
-  padding: 40px 20px;
-}
 
-#music h2 {
-  font-family: 'Times Roman', serif;
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #5a3e36;
-}
 
-#music p {
-  font-size: 1.1em;
-  color: #7a5c4b;
-  margin-bottom: 30px;
-}
 
-.music-grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 20px;
-}
-
-.soundcloud-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  max-width: 600px;
- 
-}
 
 /*======= Contact ======*/
 
@@ -572,6 +543,7 @@ body.contact-page .social-links {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 
 
