@@ -72,6 +72,12 @@ nav a {
   margin: 5px;
   }
 
+.icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
 /* ===== Social Links ===== */
 .social-links {
   position: fixed;
@@ -394,95 +400,5 @@ body.contact-page .social-links {
 
 
 /* ===== Media Queries ===== */
-
-
-
-/* Mobile & Tablet */
-@media (max-width: 768px) {
-  .banner {
-    font-size: 1.5rem;
-    padding: 15px;
-  }
-   .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* spacing between links */
-    margin-top: 15px;
-  }
-
-  .nav-menu a {
-    margin: 0; /* remove horizontal spacing */
-    width: 80%; /* optional: make links wider and easier to tap */
-    text-align: center;
-    padding: 10px 0;
-    font-size: 1rem;
-    border-radius: 6px;
-    background-color: #FFFFE3;
-    color: black;
-  }
-}
-
-
-  .content {
-    padding-left: 1rem;
-  }
-
-  .home-page .home-page-content {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
-    padding-left: 0;
-  }
-
-  .home-page .artist-img,
-  .home-page .artwork-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .home-page .artist-description,
-  .home-page .painting-description {
-    width: auto;
-    max-width: 90%;
-    padding: 0 1rem;
-  }
-
-  .social-links {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px auto;
-    gap: 10px;
-  }
-
-  .circle-link {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 480px) {
-  .banner {
-    font-size: 1.2rem;
-    padding: 10px;
-  }
-
-  .content {
-    padding-left: 0.5rem;
-  }
-
-  .art-thumb {
-    width: 100px;
-    height: 100px;
-  
-  }
-}
 
 
