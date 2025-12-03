@@ -204,18 +204,37 @@ nav a {
 
 
 
-.hat-item.image-frame {
-  border: 2px solid #ccc;
-  padding: 10px;
-  background-color: #fff;
-  text-align: center;
+.gallery-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
 }
 
-.hat-item img {
-  max-width: 400px;
-  height: auto;
-  display: block;
+.hat-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: #FFFFE3; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
 }
+
+.hat-item {
+  color: #333; 
+  background-color: #F0EAD6; 
+  padding: 10px;
+  border-radius: 8px;
+  width: auto;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
+}
+
 
 table {
   width: 100%;
@@ -405,3 +424,4 @@ body.contact-page .social-links {
 	  font-size: 0.9rem;
   }
 }
+
