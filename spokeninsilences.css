@@ -393,66 +393,24 @@ body.contact-page .social-links {
 
 /* ===== Media Queries ===== */
 
-
-@media (max-width: 480px) {
-  .banner {
-    font-size: 1.2rem;
-    padding: 10px;
-    word-spacing: 2px;
-  }
-  .content {
-	  padding-left: 0.5rem;
-  }
-  .circle-link {
-	  width: 35px;
-	  height: 35px;
-	  line-height: 35px;
-	  font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .art-item {
-    width: 100px;
-  }
-  .art-thumb {
-	  width: 100px;
-	  height:100px;
-	  object-fit: cover;
-  }
-  
-  .baskets-item {
-    width: 100px;
-  }
-
-  .baskets-thumb {
-    width: 100px;
-    height: 140px;
-  }  
-}
-
+/* ===== Responsive Overrides ===== */
 @media (max-width: 768px) {
   .banner {
     font-size: 1.5rem;
     padding: 15px;
     word-spacing: 5px;
   }
+
   .content {
     padding-left: 1rem;
   }
-  .circle-link {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1rem;
-  }
 
-  /* Stack columns vertically */
+  /* Stack home page columns vertically */
   .home-page .home-page-content {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
-    padding-left: 0; /* remove forced left padding */
+    padding-left: 0;
   }
 
   /* Make images responsive */
@@ -462,7 +420,7 @@ body.contact-page .social-links {
     height: auto;
   }
 
-  /* Allow text to shrink with screen */
+  /* Adjust text widths */
   .home-page .artist-description,
   .home-page .painting-description {
     width: auto;
@@ -470,21 +428,38 @@ body.contact-page .social-links {
     padding: 0 1rem;
   }
 
-  /* Social links stack neatly */
+  /* Social links stack nicely */
   .social-links {
     position: static;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     gap: 10px;
   }
 }
 
-@media (max-width: 900px) {
-  .social-icons {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+@media (max-width: 480px) {
+  .banner {
+    font-size: 1.2rem;
+    padding: 10px;
+    word-spacing: 2px;
+  }
+
+  .content {
+    padding-left: 0.5rem;
+  }
+
+  /* Adjust social circle links for small screens */
+  .circle-link {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+  }
+
+  /* Make gallery thumbnails smaller */
+  .art-thumb {
+    width: 100px;
+    height: 100px;
   }
 }
-
 
