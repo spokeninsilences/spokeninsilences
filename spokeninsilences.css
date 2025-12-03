@@ -236,21 +236,34 @@ footer {
   display: block;
 }
 
-/*======= Hats And Bands ======*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  background-color: #fffaf0;
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
+}
 
-.hat-item.image-frame {
-  border: 2px solid #ccc;
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
   padding: 10px;
-  background-color: #fff;
+  text-align: center;
+  color: #333;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
   text-align: center;
 }
 
-.hat-item img {
-  max-width: 400px;
-  height: auto;
-  display: block;
+th {
+  background-color: #FFFFE3;
+  color: #333;
 }
-
 
 /*====Art Gallery Styles====*/
 .gallery-wrapper {
@@ -349,105 +362,6 @@ footer {
   text-decoration: none;
   font-weight: bold;
   background: transparent;
-}
-
-/* ===== Basket Gallery Styles ===== */
-
-.gallery-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.baskets-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-  background-color: #fffaf0; 
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-.baskets-item {
-  width: 140px;
-  text-align: center;
-  font-family: 'Times New Roman', serif;
-  font-size: 0.9rem;
-  color: #333;
-}
-
-.baskets-thumb {
-  width: 140px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.baskets-thumb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 200, 150, 0.4);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Times New Roman', serif;
-  font-size: 1rem;
-  background-color: #fffaf0;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-caption {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  color: #333;
-}
-
-th, td {
-  border: 1px solid #e2e8f0;
-  padding: 1rem;
-  text-align: center;
-}
-
-th {
-  background-color: #FFFFE3;
-  color: #333;
-}
-
-/* ======Bat Styles======= */
-
-.bats-page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-	
-
-.bats-page img {
-  display: inline-block; /* makes the image respect text-align */
-  max-width: 100%;       /* responsive scaling */
-  height: auto;
-}
-
-
-
-/*====== Music =======*/
-.music-page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*======= Contact ======*/
@@ -588,3 +502,4 @@ footer {
     margin: 20px 0;
   }
 }	
+
