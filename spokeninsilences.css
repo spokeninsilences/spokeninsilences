@@ -14,7 +14,106 @@ footer {
   padding: 20px;
 }
 
+/* ===== Banner Styles ===== */
+.banner {
+  width: 100%;
+  background-color: black;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 30px;
+  margin-top: 10px;
+  font-size: 2rem; /* Use rem for scalable font size */
+  font-family: Papyrus, serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
 
+/*====Content Padding====*/
+
+.content {
+	padding-left: 2rem; /* Adds space to the left of everything except the banner */
+}
+
+/* ===== Navigation ===== */
+.nav-menu {
+	text-align: center; 
+	font-weight: bold;
+	margin-top: 10px; /* Adds space below the Banner*/
+	margin-right: 20px;
+}
+nav a { 
+ margin-right: 20px;
+}
+
+.box-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FFFFE3  ;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+/* ===== Buttons and Links ===== */
+.circle-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFE3;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
+  margin: 5px;
+  }
+
+/* ===== Social Links ===== */
+.social-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  position: relative; /* default flow */
+  margin-top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: gray;
+}
+.social-links {
+  flex-shrink: 0;
+}
+
+.home-page .social-links {
+	position: static;
+}
+
+
+.contact-page .social-links {
+	position: static;
+}
 
 /*==========home-page==========*/
 
@@ -39,7 +138,7 @@ footer {
   width: 100%;
 }
 
-
+/*=========Home Page===========*/
 .home-page .artist-image {
   width: 220px;   
   padding-right: 20px;
@@ -110,130 +209,6 @@ footer {
   color: var(--accent-color, #c94f4f);
   padding: 0;
 }
-
-
-
-/*======= Hats And Bands ======*/
-
-.hat-item.image-frame {
-  border: 2px solid #ccc;
-  padding: 10px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.hat-item img {
-  max-width: 400px;
-  height: auto;
-  display: block;
-}
-
-/* ===== Banner Styles ===== */
-.banner {
-  width: 100%;
-  background-color: black;
-  color: #F5F5F5;
-  text-align: center;
-  padding: 30px;
-  margin-top: 10px;
-  font-size: 2rem; /* Use rem for scalable font size */
-  font-family: Papyrus, serif;
-  font-style: italic;
-  letter-spacing: 5px;
-  word-spacing: 10px;
-}
-/*====Content Padding====*/
-.content {
-	padding-left: 2rem; /* Adds space to the left of everything except the banner */
-}
-
-/* ===== Navigation ===== */
-.nav-menu {
-	text-align: center; 
-	font-weight: bold;
-	margin-top: 10px; /* Adds space below the Banner*/
-	margin-right: 20px;
-}
-nav a { 
- margin-right: 20px;
-}
-
-
-.box-link {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #FFFFE3  ;
-  color: black;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-/* ===== Buttons and Links ===== */
-.circle-link {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: #FFFFE3;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  overflow: hidden;
-  margin: 5px;
-  }
-
- .icon-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
- 
-}
-/* ===== Social Links ===== */
-.social-links {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.social-icon {
-  position: relative; /* default flow */
-  margin-top: 20px;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
-}
-
-.social-icon:hover {
-  background-color: gray;
-}
-.social-links {
-  flex-shrink: 0;
-}
-
-.home-page .social-links {
-	position: static;
-}
-
-
-.contact-page .social-links {
-	position: static;
-}
-
 /*====Art Gallery Styles====*/
 .gallery-wrapper {
   flex: 1;
@@ -333,48 +308,19 @@ nav a {
   background: transparent;
 }
 
-/* ===== Basket Gallery Styles ===== */
+/*======= Hats And Bands ======*/
 
-.gallery-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.baskets-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-  background-color: #fffaf0; 
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-.baskets-item {
-  width: 140px;
+.hat-item.image-frame {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
   text-align: center;
-  font-family: 'Times New Roman', serif;
-  font-size: 0.9rem;
-  color: #333;
 }
 
-.baskets-thumb {
-  width: 140px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.baskets-thumb:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(255, 200, 150, 0.4);
+.hat-item img {
+  max-width: 400px;
+  height: auto;
+  display: block;
 }
 
 table {
@@ -540,4 +486,5 @@ body.contact-page .social-links {
     margin: 20px 0;
   }
 }
+
 
