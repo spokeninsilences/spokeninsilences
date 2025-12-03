@@ -114,6 +114,16 @@ nav a {
 .contact-page .social-links {
 	position: static;
 }
+/* ===== Social Links: Desktop Vertical Left ===== */
+.social-links {
+  position: fixed;         /* stay on the side */
+  top: 100px;              /* adjust vertical position */
+  left: 20px;              /* distance from left edge */
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  gap: 15px;
+}
+
 
 /*==========home-page==========*/
 
@@ -463,3 +473,21 @@ body.contact-page .social-links {
   }
 }
 
+/* Mobile version: horizontal and centered */
+@media (max-width: 768px) {
+  .social-links {
+    position: relative;    /* remove fixed positioning */
+    flex-direction: row;   /* horizontal row */
+    justify-content: center;
+    margin: 20px auto;     /* center on page */
+    top: auto;
+    left: auto;
+    gap: 10px;             /* smaller spacing for mobile */
+  }
+  .circle-link {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 0.9rem;
+  }
+}
