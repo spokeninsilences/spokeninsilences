@@ -1,308 +1,186 @@
-/* =========================
-   Global Styles
-========================= */
+/* ===== Global Styles ===== */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', serif;
-    background-color: #f5f5f5;
-    color: #333;
+  background-color:#999DA0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times Roman', serif;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* =========================
-   Banner
-========================= */
-.banner {
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* =========================
-   Navigation Menu
-========================= */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-    background-color: #eee;
-}
-
-.nav-menu a.box-link {
-    padding: 5px 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.nav-menu a.box-link:hover {
-    background-color: #333;
-    color: white;
-}
-
-/* =========================
-   Page Wrapper
-========================= */
-.page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* =========================
-   Social Links
-========================= */
-.social-links {
-    display: flex;
-    flex-direction: column; /* vertical by default */
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.social-links a img.icon-img {
-    width: 40px;
-    height: 40px;
-}
-
-/* =========================
-   Hat Gallery
-========================= */
-.hat-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-}
-
-.hat-item {
-    width: 200px;
-    text-align: center;
-}
-
-.hat-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hat-caption {
-    margin-top: 5px;
-    font-size: 1em;
-}
-
-/* =========================
-   Art Gallery / Paintings
-========================= */
-.art-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-}
-
-.art-item {
-    width: 220px;
-    text-align: center;
-}
-
-.art-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.art-item figcaption {
-    margin-top: 5px;
-    font-size: 1em;
-}
-
-/* =========================
-   Lightbox
-========================= */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.lightbox:target {
-    display: flex;
-}
-
-.lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 2em;
-}
-
-/* =========================
-   Tables
-========================= */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table th,
-table td {
-    border: 1px solid #333;
-    padding: 10px;
-    text-align: left;
-}
-
-table caption h2 {
-    margin-bottom: 10px;
-}
-
-/* =========================
-   Footer
-========================= */
 footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #333;
-    padding: 20px;
-    background-color: #eee;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ccc;
+  padding: 20px;
 }
 
-/* =========================
-   Home Page Layout
-========================= */
-.home-page-content {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+/* ===== Banner Styles ===== */
+.banner {
+  width: 100%;
+  background-color: black;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 30px;
+  margin-top: 10px;
+  font-size: 2rem;
+  font-family: Papyrus, serif;
+  font-style: italic;
+  letter-spacing: 5px;
+  word-spacing: 10px;
 }
 
-.center-column {
-    flex: 1 1 400px;
-    max-width: 500px;
+/*====Content Padding====*/
+.content {
+  padding-left: 2rem;
 }
 
-.right-column {
-    flex: 1 1 400px;
-    max-width: 500px;
+/* ===== Navigation ===== */
+.nav-menu {
+  text-align: center; 
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 
-.image-frame {
-    border: 2px solid #333;
-    padding: 5px;
-    margin-bottom: 10px;
+nav a { 
+  margin-right: 20px;
 }
 
-.artist-img, .artwork-img {
-    width: 100%;
-    height: auto;
+.box-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FFFFE3;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
-.artist-name {
-    font-size: 1.5em;
-    margin: 10px 0;
+/* ===== Buttons and Links ===== */
+.circle-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFE3;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
+  margin: 5px;
 }
 
-.pronounce-btn {
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 1em;
+/* ===== Social Links ===== */
+.social-links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: gray;
+}
+
+.social-links {
+  flex-shrink: 0;
+}
+
+.home-page .social-links,
+.contact-page .social-links {
+  position: static;
+}
+
+/*==========home-page==========*/
+.home-page .home-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 100px;
 }
 
 .divider {
-    border: 1px solid #333;
-    margin: 15px 0;
+  border: none;
+  height: 2px;
+  background-color: #FFFFE3; 
+  margin: 1rem 0;
+  display: block;
+  width: 100%;
 }
 
-.artist-description, .painting-description {
-    font-size: 1em;
-    line-height: 1.5;
+.home-page .artist-image {
+  width: 220px;   
+  padding-right: 20px;
+  min-height: auto; 
 }
 
-/* =========================
-   Media Queries - Mobile
-========================= */
-@media screen and (max-width: 768px) {
-
-    /* Social links horizontal on mobile */
-    .social-links {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .social-links a {
-        margin: 0;
-    }
-
-    /* Hat gallery responsive */
-    .hat-gallery {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hat-item {
-        flex: 1 1 45%;
-        max-width: 200px;
-    }
-
-    /* Art gallery responsive */
-    .art-gallery {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .art-item {
-        flex: 1 1 45%;
-        max-width: 220px;
-    }
-
-    /* Home page layout stacking */
-    .home-page-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .center-column, .right-column {
-        max-width: 100%;
-    }
-
-    .banner {
-        font-size: 1.2em;
-        padding: 10px 0;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        gap: 10px;
-    }
+.home-page .artwork-display {
+  min-height: auto;
+  padding-left: 20px; 
 }
 
+.home-page .artist-image,
+.home-page .artwork-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-frame {
+  margin-top: 0;
+  background-color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.artwork-display .image-frame img {
+  max-width: 800px;
+}
+
+.artist-image .image-frame img {
+  max-width: 400px;
+}
+
+.home-page .artist-img {
+  max-height: 800px;
+  width: auto;
+}
+
+.home-page .artwork-img {
+  max-width: 800px;
+  height: auto;
+}
+
+.home-page .artist-description {
+  width: 100%;
+}
+
+.home-page
