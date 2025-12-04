@@ -220,72 +220,6 @@ footer {
   padding: 0;
 }
 
-
-
-/*======= Hats And Bands ======*/
-
-.gallery-wrapper.hat {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
-}
-
-.hat-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-  background-color: #FFFFE3; 
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-.hat-item {
-  color: #333; 
-  background-color: #F0EAD6; 
-  padding: 10px;
-  border-radius: 8px;
-  width: auto;
-  text-align: center;
-  font-family: 'Times New Roman', serif;
-  font-size: 0.9rem;
-}
-
-
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Times New Roman', serif;
-  font-size: 1rem;
-  background-color: #fffaf0;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-caption {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  color: #333;
-}
-
-th, td {
-  border: 1px solid #e2e8f0;
-  padding: 1rem;
-  text-align: center;
-}
-
-th {
-  background-color: #FFFFE3;
-  color: #333;
-}
-
 /*====Art Gallery Styles====*/
 
 .art-gallery {
@@ -414,13 +348,6 @@ body.contact-page .social-links {
   margin-top: auto;           
   padding-bottom: 20px;       
 }
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #ccc;
-  padding: 20px;
-}
-
 
 /*======= Hats And Bands ======*/
 
@@ -452,20 +379,7 @@ footer {
   color: #333;
 }
 
-/*================*/
-/* Base: Mobile first (default styles) */
-.gallery-wrapper {
-  max-width: 100%;   /* full width on small screens */
-  margin: 0 auto;
-  padding: 10px;     /* tighter padding for mobile */
-}
 
-.hat-gallery {
-  display: grid;
-  grid-template-columns: 1fr; /* single column on mobile */
-  gap: 15px;                  /* smaller gap for compact screens */
-  justify-items: center;
-}
 /*===Table===*/
 
 table {
@@ -498,6 +412,13 @@ th {
 }
 
 
+/* Base: Mobile first (default styles) */
+.gallery-wrapper {
+  max-width: 100%;   /* full width on small screens */
+  margin: 0 auto;
+  padding: 10px;     /* tighter padding for mobile */
+}
+
 /*==============*/
 
 /* Base: Mobile first (default styles) */
@@ -506,6 +427,8 @@ th {
   margin: 0 auto;
   padding: 10px;     /* tighter padding for mobile */
 }
+
+/*================*/
 /*========Media Queries===========*/
 
 /* Tablet breakpoint */
@@ -533,4 +456,5 @@ th {
     gap: 25px;                             /* more breathing room */
   }
 }
+
 
