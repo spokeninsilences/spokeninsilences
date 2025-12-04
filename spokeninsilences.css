@@ -80,8 +80,8 @@ nav a {
   position: relative;
   margin-top: 20px;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: black;
   color: white;
   text-align: center;
@@ -167,8 +167,6 @@ footer {
   display: block;
   object-fit: cover;
 }
-
-
 
 .home-page .artist-description {
   justify-content: center;
@@ -311,7 +309,6 @@ footer {
   min-height: 70vh;          
 }
 
-
 .contact-page .contact-container {
   width: 90%;
   max-width: 600px;
@@ -453,6 +450,7 @@ th {
   }
 }
 }
+
 
 
 
