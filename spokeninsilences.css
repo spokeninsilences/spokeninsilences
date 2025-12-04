@@ -46,8 +46,8 @@ nav a {
 /* ===== Buttons and Links ===== */
 .circle-link {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   background-color: #FFFFE3;
   color: white;
   text-align: center;
@@ -146,17 +146,10 @@ footer {
   justify-content: center;
  }
 
-.home-page .artist-image,  
-.home-page .artwork-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 /* Artist Image */
 .home-page .artist-image img {
-  width: 100%;          /* scales with container */
+  width: 90%;          /* scales with container */
   max-width: 600px;    /* prevents it from being too big */
   height: auto;        /* keeps aspect ratio */
   display: block;
@@ -165,9 +158,9 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Artwork Display Images */
+/* Painting */
 .home-page .artwork-display img {
-  width: 100%;          /* responsive */
+  width: 90%;          /* responsive */
   max-width: 600px;
   height: auto;
   margin: 1.5rem auto;
@@ -477,6 +470,7 @@ th {
   }
 }
 }
+
 
 
 
