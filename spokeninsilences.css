@@ -131,11 +131,39 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 2rem;
-  align-items: start;
-  padding: 2rem;
+  gap: 10px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-left: 100px;
+}
+
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #FFFFE3; /* or your accent color */
+  margin: 1rem 0;
+  display: block;
+  width: 100%;
+}
+
+
+.home-page .artist-image {
+  width: 90%;          /* Default width for mobile */
+  max-width: 600px;    /* Prevent it from being too big */
+  height: auto;        /* Maintain aspect ratio */
+  display: block;      /* Needed for margin auto to work */
+  margin: 20px auto;   /* Center horizontally and add vertical spacing */
+  border-radius: 5px;  /* Optional: soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Optional: subtle shadow */
+}
+
+
+
+.home-page .artwork-display {
+  min-height: auto;    /* Let content define height */
+  padding-left: 20px; 
 }
 
 .home-page .artist-image,
@@ -144,65 +172,42 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- }
-
-.home-page .artist-image,  
-.home-page .artwork-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Artist Image */
-.home-page .artist-image img {
-  width: 90%;          /* scales with container */
-  max-width: 600px;    /* prevents it from being too big */
-  height: auto;        /* keeps aspect ratio */
-  display: block;
-  margin: 2rem auto;   /* centers image and adds spacing */
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-/* Artwork Display Images */
-.home-page .artwork-display img {
-  width: 90%;          /* responsive */
-  max-width: 600px;
-  height: auto;
-  margin: 1.5rem auto;
-display: block;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 .image-frame {
-  margin-top: 0;
   background-color: black;     /* Black border background */
-  padding: 2%;                /* Thickness of the border */
+  padding: 20px;                /* Thickness of the border */
   display: inline-block;       /* Shrinks to fit image size */
-  border-radius: 4px; 			/* Optional: soft corners */
-  box-sizing: border-box;		/* include padding in width*/
+  border-radius: 4px;          /* Optional: soft corners */
 }
-
 
 .artwork-display,
 .artist-image,
 .image-frame img {
- max-width: 100%;
- height: auto;
- display: block;
- border-radius: 4px;
-}   
+  max-width: 100%; 
+  height: auto;
+}
 
-.home-page .artist-description {
-  width: 100%;
+.home-page .artist-img {
+  max-height: 100%;   
+  width: auto;
+}
+
+.home-page .artwork-img {
+  max-width:100%;  
+  height: auto;
+}
+
+.home-page .artist-image {
+	position: center;
 }
 
 .home-page .painting-description h2 {
   margin-bottom: 10px;
   text-align: center; 
 }
+
+
 .pronunciation {
   font-style: italic;
   font-size: 0.8em;
@@ -393,8 +398,6 @@ body.contact-page .social-links {
   font-size: 1rem;
   color: #333;
 }
-
-
 /*===Table===*/
 
 table {
@@ -430,7 +433,7 @@ th {
 
 /* Base: Mobile first (default styles) */
 .gallery-wrapper {
-  max-width: 100%;   /* full width on small screens */
+  max-width: 95%;   /* full width on small screens */
   margin: 0 auto;
   padding: 10px;     /* tighter padding for mobile */
 }
@@ -440,17 +443,27 @@ th {
 
 /* Tablet breakpoint */
 @media (min-width: 600px) {
-  .gallery-wrapper {
-    max-width: 95%;   /* slightly narrower for balance */
-    padding: 15px;
+   .banner {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  .nav-menu a.box-link {
+    border-bottom: none;
+    padding: 0 20px;
   }
 
   .hat-gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
-
 /* Desktop breakpoint */
 @media (min-width: 1024px) {
   .gallery-wrapper {
@@ -462,15 +475,13 @@ th {
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 25px;                             /* more breathing room */
   }
-}
-
-@media (max-width: 480px) {
-  .image-frame {
-    padding: 4%;                 /* slightly more proportional padding on mobile */
+  
+  
+  .nav-menu {
+    justify-content: flex-start;
   }
 }
-
-
+}
 
 
 
