@@ -156,7 +156,7 @@ footer {
 
 /* Artist Image */
 .home-page .artist-image img {
-  width: 90%;          /* scales with container */
+  width: 100%;          /* scales with container */
   max-width: 600px;    /* prevents it from being too big */
   height: auto;        /* keeps aspect ratio */
   display: block;
@@ -167,7 +167,7 @@ footer {
 
 /* Artwork Display Images */
 .home-page .artwork-display img {
-  width: 90%;          /* responsive */
+  width: 100%;          /* responsive */
   max-width: 600px;
   height: auto;
   margin: 1.5rem auto;
@@ -195,7 +195,7 @@ footer {
 }   
 
 .home-page .artist-description {
-  width: 100%;
+  justify-content: center;
 }
 
 .home-page .painting-description h2 {
@@ -477,6 +477,7 @@ th {
   }
 }
 }
+
 
 
 
