@@ -16,7 +16,7 @@ body {
   text-align: center;
   padding: 30px;
   margin-top: 10px;
-  font-size: 2rem; /* Use rem for scalable font size */
+  font-size: 3rem; /* Use rem for scalable font size */
   font-family: Papyrus, serif;
   font-style: italic;
   letter-spacing: 5px;
@@ -80,8 +80,8 @@ nav a {
   position: relative;
   margin-top: 20px;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: black;
   color: white;
   text-align: center;
@@ -168,14 +168,7 @@ footer {
   object-fit: cover;
 }
 
-.artwork-display,
-.artist-image,
-.image-frame img {
- max-width: 100%;
- height: auto;
- display: block;
- border-radius: 2px;
-}   
+
 
 .home-page .artist-description {
   justify-content: center;
@@ -460,6 +453,7 @@ th {
   }
 }
 }
+
 
 
 
