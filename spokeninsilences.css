@@ -426,14 +426,6 @@ th {
   color: #333;
 }
 
-
-/* Base: Mobile first (default styles) */
-.gallery-wrapper {
-  max-width: 100%;   /* full width on small screens */
-  margin: 0 auto;
-  padding: 10px;     /* tighter padding for mobile */
-}
-
 /*==============*/
 
 /* Base: Mobile first (default styles) */
@@ -477,6 +469,7 @@ th {
     padding: 4%;                 /* slightly more proportional padding on mobile */
   }
 }
+
 
 
 
