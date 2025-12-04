@@ -112,7 +112,7 @@ nav a {
 
 /*====Content Padding====*/
 .content {
-	padding-left: 2rem; /* Adds space to the left of everything except the banner */
+	padding-left: 1rem; /* Adds space to the left of everything except the banner */
 }
 
 /*=====Footer======*/
@@ -126,6 +126,7 @@ footer {
 /* ===== Pages ====== */
 
 /*==========home-page==========*/
+
 .home-page .home-page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -170,7 +171,7 @@ footer {
   max-width: 600px;
   height: auto;
   margin: 1.5rem auto;
-display: block;
+  display: block;
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
@@ -183,7 +184,6 @@ display: block;
   border-radius: 4px; 			/* Optional: soft corners */
   box-sizing: border-box;		/* include padding in width*/
 }
-
 
 .artwork-display,
 .artist-image,
@@ -202,8 +202,6 @@ display: block;
   margin-bottom: 10px;
   text-align: center; 
 }
-
-
 
 .pronunciation {
   font-style: italic;
@@ -479,6 +477,7 @@ th {
   }
 }
 }
+
 
 
 
