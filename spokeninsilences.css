@@ -46,8 +46,8 @@ nav a {
 /* ===== Buttons and Links ===== */
 .circle-link {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background-color: #FFFFE3;
   color: white;
   text-align: center;
@@ -461,6 +461,7 @@ th {
     gap: 25px;                             /* more breathing room */
   }
 }
+
 
 
 
