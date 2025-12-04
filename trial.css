@@ -1,0 +1,78 @@
+/* ===== Global Styles ===== */
+body {
+  background-color: #999DA0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times Roman', serif;
+}
+
+/* ===== Banner ===== */
+.banner {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;       /* Desktop default */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* ===== Home Page Content Grid ===== */
+.home-page .home-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2 columns for desktop */
+  gap: 2rem;
+  align-items: start;              /* aligns items at top */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Artist Images ===== */
+.home-page .artist-image {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ===== Media Queries ===== */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+  .banner {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .home-page .home-page-content {
+    grid-template-columns: 1fr;  /* stack columns */
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .home-page .artist-image {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+  .banner {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .home-page .home-page-content {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .home-page .artist-image {
+    margin: 1rem auto;
+  }
+}
