@@ -172,10 +172,10 @@ footer {
 .image-frame {
   margin-top: 0;
   background-color: black;     /* Black border background */
-  padding: 2%;                /* Thickness of the border */
+               /* Thickness of the border */
   display: inline-block;       /* Shrinks to fit image size */
   border-radius: 2px; 			/* Optional: soft corners */
-  box-sizing: border-box;		/* include padding in width*/
+  		/* include padding in width*/
 }
 
 .artwork-display,
@@ -470,6 +470,7 @@ th {
   }
 }
 }
+
 
 
 
