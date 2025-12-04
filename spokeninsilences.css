@@ -176,22 +176,17 @@ footer {
   border-radius: 4px;          /* Optional: soft corners */
 }
 
-.artwork-display .image-frame img {
-  max-width: 800px;   /* Enlarges the artwork */
-}
+.artwork-display,
+.artist-image,
+.image-frame img {
+max-width: 100%;
+height: auto;
+}       
 
-.artist-image .image-frame img {
-  max-width: 400px;          /* Shrinks the actual image */
-}
-/* Make artist headshot smaller */
-.home-page .artist-img {
-  max-height: 800px;   /* shrink portrait */
-  width: auto;
-}
+ 
 
-/* Make artwork bigger */
 .home-page .artwork-img {
-  max-width: 800px;   /* enlarge painting */
+  max-width: 100%;  
   height: auto;
 }
 
@@ -466,6 +461,7 @@ th {
     gap: 25px;                             /* more breathing room */
   }
 }
+
 
 
 
