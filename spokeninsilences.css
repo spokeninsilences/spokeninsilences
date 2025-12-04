@@ -109,6 +109,7 @@ nav a {
 	position: static;
 }
 
+
 /*====Content Padding====*/
 .content {
 	padding-left: 2rem; /* Adds space to the left of everything except the banner */
@@ -286,13 +287,7 @@ th {
 }
 
 /*====Art Gallery Styles====*/
-.gallery-wrapper.art {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-}
+
 .art-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -427,102 +422,115 @@ footer {
 }
 
 
-/* ===== Media Queries ===== */
+/*======= Hats And Bands ======*/
 
-
-@media (max-width: 480px) {
-  .banner {
-    font-size: 1.2rem;
-    padding: 10px;
-    word-spacing: 2px;
-  }
-  .content {
-	  padding-left: 0.5rem;
-  }
-  .circle-link {
-	  width: 35px;
-	  height: 35px;
-	  line-height: 35px;
-	  font-size: 0.9rem;
-  }
+.hat-gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* single column on mobile */
+  gap: 15px;                  /* smaller gap for compact screens */
+  justify-items: center;
+  margin-top: auto;
+  background-color: #FFFFE3; 
+  padding: 1rem;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
 }
 
-@media (max-width: 600px) {
-  .art-item {
-    width: 100px;
-  }
-  .art-thumb {
-	  width: 100px;
-	  height:100px;
-	  object-fit: cover;
-  }
-  
-  .baskets-item {
-    width: 100px;
-  }
-
-  .baskets-thumb {
-    width: 100px;
-    height: 140px;
-  }  
+.hat-item {
+  color: #333; 
+  background-color: #F0EAD6; 
+  border-radius: 8px;
+  width: auto;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .banner {
-    font-size: 1.5rem;
+.hat-caption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/*================*/
+/* Base: Mobile first (default styles) */
+.gallery-wrapper {
+  max-width: 100%;   /* full width on small screens */
+  margin: 0 auto;
+  padding: 10px;     /* tighter padding for mobile */
+}
+
+.hat-gallery {
+  display: grid;
+  grid-template-columns: 1fr; /* single column on mobile */
+  gap: 15px;                  /* smaller gap for compact screens */
+  justify-items: center;
+}
+/*===Table===*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  background-color: #fffaf0;
+  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  text-align: center;
+}
+
+th {
+  background-color: #FFFFE3;
+  color: #333;
+}
+
+
+/*==============*/
+
+/* Base: Mobile first (default styles) */
+.gallery-wrapper {
+  max-width: 100%;   /* full width on small screens */
+  margin: 0 auto;
+  padding: 10px;     /* tighter padding for mobile */
+}
+/*========Media Queries===========*/
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+  .gallery-wrapper {
+    max-width: 95%;   /* slightly narrower for balance */
     padding: 15px;
-    word-spacing: 5px;
-  }
-  .content {
-    padding-left: 1rem;
-  }
-  .circle-link {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1rem;
   }
 
-  /* Stack columns vertically */
-  .home-page .home-page-content {
-    grid-template-columns: 1fr;
-    justify-items: center;
+  .hat-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px;
-    padding-left: 0; /* remove forced left padding */
-  }
-
-  /* Make images responsive */
-  .home-page .artist-img,
-  .home-page .artwork-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Allow text to shrink with screen */
-  .home-page .artist-description,
-  .home-page .painting-description {
-    width: auto;
-    max-width: 90%;
-    padding: 0 1rem;
-  }
-
-  /* Social links stack neatly */
-  .social-links {
-    position: static;
-    align-items: center;
-    gap: 10px;
   }
 }
 
-@media (max-width: 900px) {
-  .social-icons {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+  .gallery-wrapper {
+    max-width: 1200px; /* contained width */
+    padding: 20px;
   }
-}	
 
-
-
+  .hat-gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 25px;                             /* more breathing room */
+  }
+}
 
