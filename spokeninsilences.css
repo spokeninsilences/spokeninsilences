@@ -223,7 +223,7 @@ footer {
 
 /*======= Hats And Bands ======*/
 
-.gallery-wrapper {
+.gallery-wrapper.hat {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -286,7 +286,7 @@ th {
 }
 
 /*====Art Gallery Styles====*/
-.gallery-wrapper {
+.gallery-wrapper.art {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -522,6 +522,7 @@ footer {
     margin: 20px 0;
   }
 }	
+
 
 
 
