@@ -179,17 +179,22 @@ display: block;
 .image-frame {
   margin-top: 0;
   background-color: black;     /* Black border background */
-  padding: 10px;                /* Thickness of the border */
+  padding: 2%;                /* Thickness of the border */
   display: inline-block;       /* Shrinks to fit image size */
-  border-radius: 4px;          /* Optional: soft corners */
+  border-radius: 4px; 			/* Optional: soft corners */
+  box-sizing: border-box;		/* include padding in width*/
 }
+
 
 .artwork-display,
 .artist-image,
 .image-frame img {
-max-width: 100%;
-height: auto;
-}       
+ max-width: 100%;
+ height: auto;
+ display: block;
+ border-radius: 4px;
+}   
+
 .home-page .artist-description {
   width: 100%;
 }
@@ -467,8 +472,11 @@ th {
   }
 }
 
-
-
+@media (max-width: 480px) {
+  .image-frame {
+    padding: 4%;                 /* slightly more proportional padding on mobile */
+  }
+}
 
 
 
