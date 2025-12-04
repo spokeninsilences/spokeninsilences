@@ -168,14 +168,6 @@ footer {
   object-fit: cover;
 }
 
-.image-frame {
-  margin-top: 0;
-  background-color: black;     /* Black border background */
-  display: inline-block;       /* Shrinks to fit image size */
-  border-radius: 2px; 			/* Optional: soft corners */
-  box-sizing: border-box;		/* include padding in width*/
-}
-
 .artwork-display,
 .artist-image,
 .image-frame img {
@@ -468,6 +460,7 @@ th {
   }
 }
 }
+
 
 
 
