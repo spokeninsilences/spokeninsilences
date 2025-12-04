@@ -174,7 +174,7 @@ footer {
   background-color: black;     /* Black border background */
   padding: 2%;                /* Thickness of the border */
   display: inline-block;       /* Shrinks to fit image size */
-  border-radius: 4px; 			/* Optional: soft corners */
+  border-radius: 2px; 			/* Optional: soft corners */
   box-sizing: border-box;		/* include padding in width*/
 }
 
@@ -184,7 +184,7 @@ footer {
  max-width: 100%;
  height: auto;
  display: block;
- border-radius: 4px;
+ border-radius: 2px;
 }   
 
 .home-page .artist-description {
@@ -470,6 +470,7 @@ th {
   }
 }
 }
+
 
 
 
