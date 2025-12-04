@@ -424,4 +424,20 @@ body.contact-page .social-links {
 	  font-size: 0.9rem;
   }
 }
+@media (max-width: 600px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center the links */
+    gap: 0.5rem;            /* space between links */
+    margin-top: 1rem;
+  }
+
+  .nav-menu a {
+    display: block;
+    margin: 0;              /* remove right margin */
+    padding: 0.5rem 0;      /* touch-friendly spacing */
+  }
+}
+
 
