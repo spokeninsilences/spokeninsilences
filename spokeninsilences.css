@@ -373,6 +373,16 @@ body.contact-page .social-links {
   font-size: 0.9rem;
 }
 
+.image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
 .hat-caption {
   margin-top: 8px;
   font-size: 1rem;
@@ -456,5 +466,6 @@ th {
     gap: 25px;                             /* more breathing room */
   }
 }
+
 
 
