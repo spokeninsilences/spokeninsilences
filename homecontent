@@ -1,0 +1,90 @@
+
+/*==========home-page==========*/
+
+.home-page .home-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 6rem;
+}
+
+.divider {
+  border: none;
+  height: 2px;
+  background-color: #FFFFE3; 
+  margin: 1rem 0;
+  display: block;
+  width: 100%;
+}
+
+
+.home-page .artist-image {
+  width: 220px;   
+  padding-right: 20px;
+  min-height: auto; 
+}
+
+.home-page .artwork-display {
+  min-height: auto;    /* Let content define height */
+  padding-left: 20px; 
+}
+
+.home-page .artist-image,
+.home-page .artwork-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-frame {
+  margin-top: 0;
+  background-color: black;     /* Black border background */
+  padding: 20px;                /* Thickness of the border */
+  display: inline-block;       /* Shrinks to fit image size */
+  border-radius: 4px;          /* Optional: soft corners */
+}
+
+.artwork-display,
+.artist-image,
+.image-frame img {
+max-width: 100%;
+height: auto;
+}       
+
+ 
+
+.home-page .artwork-img {
+  max-width: 100%;  
+  height: auto;
+}
+
+.home-page .artist-description {
+  width: 100%;
+}
+
+.home-page .painting-description h2 {
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+
+.pronunciation {
+  font-style: italic;
+  font-size: 0.8em;
+  color: var(--accent-color, #FFFFE3); /* fallback if no variable */
+}
+
+.pronounce-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85em; /* smaller icon size */
+  color: var(--accent-color, #c94f4f);
+  padding: 0;
+}home
