@@ -483,10 +483,10 @@ th {
 @media (min-width: 1024px) {
   /* Banner uses base styles (3rem, 30px padding) */
 
-  /* Navigation: row layout, left-aligned */
+
   .nav-menu {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
   }
 
@@ -494,6 +494,7 @@ th {
     display: inline-block;
     padding: 0 20px;
   }
+	
 
   /* Hat gallery: 3 columns */
   .gallery-hats {
@@ -507,6 +508,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
