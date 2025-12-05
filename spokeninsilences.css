@@ -33,6 +33,7 @@ body {
 
 /* ===== Navigation ===== */
 .nav-menu {
+	display: flex;
 	text-align: center; 
 	font-weight: bold;
 	margin-top: 10px; /* Adds space below the Banner*/
@@ -495,6 +496,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
