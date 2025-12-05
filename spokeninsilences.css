@@ -23,6 +23,15 @@ body {
   word-spacing: 10px;
 }
 
+/*=====border line=====*/
+.full-line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin: 0;
+}
+
 /* ===== Navigation ===== */
 .nav-menu {
 	text-align: center; 
@@ -499,6 +508,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
