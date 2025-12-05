@@ -76,6 +76,7 @@ nav a {
  
 }
 /* ===== Social Links ===== */
+
 .social-links {
   position: fixed;
   display: flex;
@@ -109,7 +110,9 @@ nav a {
   flex-shrink: 0;
 }
 
-.home-page .social-links,
+.home-page .social-links {
+	position: static;
+}
 .contact-page .social-links {
   position: static;
 }
@@ -507,6 +510,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
