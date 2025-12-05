@@ -1,12 +1,40 @@
 
-	/* ===== Global Styles ===== */
+/* ===== Global Styles ===== */
 body {
   background-color:#999DA0;
   margin: 0;
   padding: 0;
   font-family: 'Times Roman', serif;
- }
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
 
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  width: 100%;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
 
 /* ===== Banner Styles ===== */
 .banner {
@@ -16,47 +44,38 @@ body {
   text-align: center;
   padding: 30px;
   margin-top: 10px;
-  font-size: 3rem; /* Use rem for scalable font size */
+  font-size: 3rem;
   font-family: Papyrus, serif;
   font-style: italic;
   letter-spacing: 5px;
   word-spacing: 10px;
 }
 
-/*=====border line=====*/
-.full-line {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  border: none;
-  margin: 0;
-}
-
 /* ===== Navigation ===== */
 .nav-menu {
-	text-align: center; 
-	font-weight: bold;
-	margin-top: 10px; /* Adds space below the Banner*/
-	margin-right: 20px;
+  text-align: center; 
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 20px;
 }
 nav a { 
- margin-right: 20px;
+  margin-right: 20px;
 }
-
 .box-link {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #FFFFE3  ;
+  background-color: #FFFFE3;
   color: black;
   text-decoration: none;
   border-radius: 4px;
   font-size: 1rem;
 }
+
 /* ===== Buttons and Links ===== */
 .circle-link {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #FFFFE3;
   color: white;
   text-align: center;
@@ -67,38 +86,22 @@ nav a {
   font-size: 1.2rem;
   overflow: hidden;
   margin: 5px;
-  }
-
- .icon-img {
+}
+.icon-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
 }
+
 /* ===== Social Links ===== */
-
-.container-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 70vh;
-
-
-.contact-container {
-		width: 100%;
-		text-align: center;
-}
-	
 .social-links {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 15px;
-	margin-top: 20px;
-	flex-wrap: wrap;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
 }
-
-
 .social-icon {
   position: relative;
   margin-top: 20px;
@@ -115,24 +118,20 @@ nav a {
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
-
 .social-icon:hover {
   background-color: gray;
 }
 .social-links {
   flex-shrink: 0;
 }
-
-.home-page .social-links {
-	position: static;
-}
+.home-page .social-links,
 .contact-page .social-links {
   position: static;
 }
 
 /*====Content Padding====*/
 .content {
-	padding-left: 1rem; /* Adds space to the left of everything except the banner */
+  padding-left: 1rem;
 }
 
 /*=====Footer======*/
@@ -146,7 +145,6 @@ footer {
 /* ===== Pages ====== */
 
 /*==========home-page==========*/
-
 .home-page .home-page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,62 +155,52 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .home-page .artist-image,
 .home-page .artwork-display {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- }
-
-
-/* Artist Image */
+}
 .home-page .artist-image img {
-  width: 90%;          /* scales with container */
-  max-width: 600px;    /* prevents it from being too big */
-  height: auto;        /* keeps aspect ratio */
+  width: 90%;
+  max-width: 600px;
+  height: auto;
   display: block;
-  margin: 2rem auto;   /* centers image and adds spacing */
+  margin: 2rem auto;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-
-/* Painting */
 .home-page .artwork-display img {
-  width: 100%;          /* responsive */
+  width: 100%;
   max-width: 600px;
   height: 100%;
   margin: 1.5rem auto;
   display: block;
   object-fit: cover;
 }
-
 .home-page .artist-description {
   justify-content: center;
 }
-
 .home-page .painting-description h2 {
   margin-bottom: 10px;
   text-align: center; 
 }
-
 .pronunciation {
   font-style: italic;
   font-size: 0.8em;
-  color: var(--accent-color, #FFFFE3); /* fallback if no variable */
+  color: var(--accent-color, #FFFFE3);
 }
 .pronounce-btn {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 0.85em; /* smaller icon size */
+  font-size: 0.85em;
   color: var(--accent-color, #c94f4f);
   padding: 0;
 }
 
 /*====Art Gallery Styles====*/
-
 .art-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -220,309 +208,8 @@ footer {
   justify-content: center;
   margin-top: 30px;
 }
-
 .art-item {
-  width: 120px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: #333;
-}
-.thumbnail-frame {
-  border: 2px solid black;       /* Thin black border */
-  padding: 6px;                  /* Space inside the frame */
-  border-radius: 6px;            /* Optional: soft corners */
-  background-color: black;     /* Optional: subtle background */
-  display: inline-block;         /* Keeps frame tight around content */
-}
-
-.thumbnail-frame figcaption {
-  font-family: 'Times Roman', serif;
-  font-size: 0.9rem;
-  color: #FFFFE3;
-  margin-top: 2px;
-  text-align: center;
-  font-style: italic;
-}
-
-.art-thumb {
-  width: 120px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.art-thumb:hover {
-  transform: scale(1.1);
-  
-}
-.page-wrapper {
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-}
-
-.divider {
-  border: none;
-  height: 2px;
-  background-color: #FFFFE3; 
-  margin: 1rem 0;
-  display: block;
-  width: 100%;
-}
-
-/* ===== Lightbox Overlay ===== */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  text-align: center;
-  padding-top: 60px;
-}
-
-/* Show only the targeted image */
-.lightbox:target {
-  display: block;
-}
-
-/* Style the enlarged image */
-.lightbox img {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
-/* Close button styling */
-.lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  background: transparent;
-}
-
-/*======= Contact ======*/
-
-#formFeedback {
-  margin-top: 1em;
-  font-weight: bold;
-  color: var(--accent-color); 
-}
-
-
-/* Make the wrapper a flexbox that centers its content */
-.container-wrapper {
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
-  min-height: 70vh;          
-}
-
-.contact-page .contact-container {
-  width: 90%;
-  max-width: 600px;
-  padding: 20px;
-  text-align: center;       
-  background: transparent;
-}
-/* Contact page social links */
-body.contact-page .social-links {
-  display: flex;              
-  flex-direction: row;       
-  justify-content: center;    
-  align-items: center;       
-  gap: 15px;                  
-  margin-top: auto;           
-  padding-bottom: 20px;       
-}
-
-/*======= Hats And Bands ======*/
-
-.hat-gallery {
-  display: grid;
-  grid-template-columns: 1fr; /* single column on mobile */
-  gap: 15px;                  /* smaller gap for compact screens */
-  justify-items: center;
-  margin-top: auto;
-  background-color: #FFFFE3; 
-  padding: 1rem;
-  border-radius: 0.3em;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-.hat-item {
-  color: #333; 
-  background-color: #F0EAD6; 
-  border-radius: 8px;
-  width: auto;
-  text-align: center;
-  font-family: 'Times New Roman', serif;
-  font-size: 0.9rem;
-}
-
-.image-frame img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 4px solid #333;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-}
-
-.hat-caption {
-  margin-top: 8px;
-  font-size: 1rem;
-  color: #333;
-}
-/*===Table===*/
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Times New Roman', serif;
-  font-size: 1rem;
-  background-color: #fffaf0;
-  box-shadow: 0 0 10px rgba(255, 200, 150, 0.2);
-}
-
-caption {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  color: #333;
-}
-
-th, td {
-  border: 1px solid #e2e8f0;
-  padding: 1rem;
-  text-align: center;
-}
-
-th {
-  background-color: #FFFFE3;
-  color: #333;
-}
-
-/*==============*/
-
-/* Base: Mobile first (default styles) */
-.gallery-wrapper {
-  max-width: 95%;   /* full width on small screens */
-  margin: 0 auto;
-  padding: 10px;     /* tighter padding for mobile */
-}
-
-/*================*/
-/*========Media Queries===========*/
-
-
-/* ===== Responsive Media Queries (Mobile-First) ===== */
-
-/* ===== Mobile: up to 599px ===== */
-@media (max-width: 599px) {
-  /* Banner */
-  .banner {
-    font-size: 1.5rem;
-    padding: 15px 5px;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-  }
-
-  /* Navigation: stacked vertically */
-  .nav-menu {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-    margin-top: 10px;
-  }
-
-  .nav-menu a.box-link {
-    border: 1px solid black;
-	border-radius: 0;
-	display: block;
-    width: 100%;
-	text-align: center;
-    padding: 12px 0;
-  }
-
-  /* Hat gallery: single column */
-  .hat-gallery {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-}
-
-/* ===== Tablet: 600px – 1023px ===== */
-@media (min-width: 600px) and (max-width: 1023px) {
-  /* Banner */
-  .banner {
-    font-size: 2rem;
-    padding: 20px 10px;
-    word-spacing: 5px;
-    letter-spacing: 3px;
-  }
-
-  /* Navigation: row layout */
-  .nav-menu {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .nav-menu a.box-link {
-    display: inline-block;
-    padding: 0 20px;
-  }
-
-  /* Hat gallery: 2 columns */
-  .hat-gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
-/* ===== Desktop: 1024px and above ===== */
-@media (min-width: 1024px) {
-  /* Banner uses base styles (3rem, 30px padding) */
-
-  /* Navigation: row layout, left-aligned */
-  .nav-menu {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 30px;
-  }
-
-  .nav-menu a.box-link {
-    display: inline-block;
-    padding: 0 20px;
-  }
-
-  /* Hat gallery: 3 columns */
-  .hat-gallery {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
-
-  /* Gallery wrapper max-width */
-  .gallery-wrapper {
-    max-width: 1200px;
-    padding: 20px;
-  }
-}
+  width: 12
 
 
 
