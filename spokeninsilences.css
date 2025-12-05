@@ -409,50 +409,97 @@ th {
 /*================*/
 /*========Media Queries===========*/
 
-/* Tablet breakpoint */
-@media (min-width: 600px) {
-   .banner {
+
+/* ===== Responsive Media Queries (Mobile-First) ===== */
+
+/* ===== Mobile: up to 599px ===== */
+@media (max-width: 599px) {
+  /* Banner */
+  .banner {
     font-size: 1.5rem;
-    padding: 15px 10px;
+    padding: 15px 5px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
   }
 
+  /* Navigation: stacked vertically */
   .nav-menu {
-    flex-direction: row;
-    justify-content: center;
-    border-bottom: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .nav-menu a.box-link {
-    border-bottom: none;
+    display: block;
+    padding: 8px 10px;
+  }
+
+  /* Hat gallery: single column */
+  .hat-gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* ===== Tablet: 600px – 1023px ===== */
+@media (min-width: 600px) and (max-width: 1023px) {
+  /* Banner */
+  .banner {
+    font-size: 2rem;
+    padding: 20px 10px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+  }
+
+  /* Navigation: row layout */
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-menu a.box-link {
+    display: inline-block;
     padding: 0 20px;
   }
 
+  /* Hat gallery: 2 columns */
   .hat-gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
-/* Desktop breakpoint */
+
+/* ===== Desktop: 1024px and above ===== */
 @media (min-width: 1024px) {
+  /* Banner uses base styles (3rem, 30px padding) */
+
+  /* Navigation: row layout, left-aligned */
+  .nav-menu {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .nav-menu a.box-link {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  /* Hat gallery: 3 columns */
+  .hat-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  /* Gallery wrapper max-width */
   .gallery-wrapper {
-    max-width: 1200px; /* contained width */
+    max-width: 1200px;
     padding: 20px;
   }
-
-  .hat-gallery {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 25px;                             /* more breathing room */
-  }
-  
-  
-  .nav-menu {
-    justify-content: flex-start;
-  }
 }
-}
-
-
-
 
 
 
