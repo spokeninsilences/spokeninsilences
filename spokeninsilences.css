@@ -109,11 +109,10 @@ nav a {
   flex-shrink: 0;
 }
 
-
+.home-page .social-links,
 .contact-page .social-links {
-	position: static;
+  position: static;
 }
-
 
 /*====Content Padding====*/
 .content {
@@ -508,6 +507,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
