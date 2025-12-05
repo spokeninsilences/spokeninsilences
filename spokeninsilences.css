@@ -6,7 +6,35 @@ body {
   padding: 0;
   font-family: 'Times Roman', serif;
  }
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
 
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  width: 100%;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
 
 /* ===== Banner Styles ===== */
 .banner {
@@ -109,11 +137,16 @@ nav a {
   flex-shrink: 0;
 }
 
-.home-page .social-links,
-.contact-page .social-links {
+.home-page .social-links {
   position: static;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
 /*====Content Padding====*/
 .content {
 	padding-left: 1rem; /* Adds space to the left of everything except the banner */
@@ -507,6 +540,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
