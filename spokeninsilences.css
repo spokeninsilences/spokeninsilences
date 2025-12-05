@@ -6,27 +6,10 @@ body {
   padding: 0;
   font-family: 'Times Roman', serif;
 }
-.container-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 70vh;
-}
 
-.contact-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
   box-sizing: border-box;
 }
 
-.contact-container {
-  width: 100%;
-  text-align: center;
-}
 
 .social-links {
   display: flex;
@@ -210,6 +193,7 @@ footer {
 }
 .art-item {
   width: 12
+
 
 
 
