@@ -7,10 +7,6 @@ body {
   font-family: 'Times Roman', serif;
 }
 
-  box-sizing: border-box;
-}
-
-
 .social-links {
   display: flex;
   justify-content: center;
@@ -193,6 +189,7 @@ footer {
 }
 .art-item {
   width: 12
+
 
 
 
