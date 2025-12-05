@@ -323,7 +323,7 @@ footer {
 
 /*======= Hats And Bands ======*/
 
-.gallery.hats {
+.gallery-hats {
   display: grid;
   grid-template-columns: 1fr; /* single column on mobile */
   gap: 15px;                  /* smaller gap for compact screens */
@@ -390,7 +390,6 @@ th {
   color: #333;
 }
 
-/*==============*/
 
 /* Base: Mobile first (default styles) */
 .gallery-wrapper {
@@ -399,7 +398,7 @@ th {
   padding: 10px;     /* tighter padding for mobile */
 }
 
-/*================*/
+
 /*========Media Queries===========*/
 
 
@@ -496,6 +495,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
