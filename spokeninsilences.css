@@ -109,7 +109,7 @@ nav a {
 }
 
 .home-page .social-links {
-  position: static;
+  position: sticky;
 }
 
 .social-links {
@@ -323,17 +323,7 @@ footer {
   padding: 20px;
   text-align: center;       
   background: transparent;
-}
-/* Contact page social links */
-body.contact-page .social-links {
-  display: flex;              
-  flex-direction: row;       
-  justify-content: center;    
-  align-items: center;       
-  gap: 15px;                  
-  margin-top: auto;           
-  padding-bottom: 20px;       
-}
+
 
 /*======= Hats And Bands ======*/
 
@@ -511,6 +501,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
