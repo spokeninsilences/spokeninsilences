@@ -425,15 +425,18 @@ th {
   /* Navigation: stacked vertically */
   .nav-menu {
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
+    align-items: stretch;
+    gap: 0;
     margin-top: 10px;
   }
 
   .nav-menu a.box-link {
-    display: block;
-    padding: 8px 10px;
+    border: 1px solid black;
+	border-radius: 0;
+	display: block;
+    width: 100%;
+	text-align: center;
+    padding: 12px 0;
   }
 
   /* Hat gallery: single column */
@@ -500,6 +503,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
