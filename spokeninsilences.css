@@ -327,12 +327,11 @@ footer {
 
 /*======= Hats And Bands ======*/
 
-.hat-gallery {
+.gallery.hat {
   display: grid;
   grid-template-columns: 1fr; /* single column on mobile */
   gap: 15px;                  /* smaller gap for compact screens */
   justify-items: center;
-  margin-top: auto;
   background-color: #FFFFE3; 
   padding: 1rem;
   border-radius: 0.3em;
@@ -501,6 +500,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
