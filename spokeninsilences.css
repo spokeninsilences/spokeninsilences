@@ -7,6 +7,7 @@ body {
   font-family: 'Times Roman', serif;
  }
 
+
 /* ===== Banner Styles ===== */
 .banner {
   width: 100%;
@@ -109,12 +110,7 @@ nav a {
   flex-shrink: 0;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
+
 /*====Content Padding====*/
 .content {
 	padding-left: 1rem; /* Adds space to the left of everything except the banner */
@@ -320,7 +316,17 @@ footer {
   padding: 20px;
   text-align: center;       
   background: transparent;
-
+}
+/* Contact page social links */
+body.contact-page .social-links {
+  display: flex;              
+  flex-direction: row;       
+  justify-content: center;    
+  align-items: center;       
+  gap: 15px;                  
+  margin-top: auto;           
+  padding-bottom: 20px;       
+}
 
 /*======= Hats And Bands ======*/
 
@@ -329,6 +335,7 @@ footer {
   grid-template-columns: 1fr; /* single column on mobile */
   gap: 15px;                  /* smaller gap for compact screens */
   justify-items: center;
+  margin-top: auto;
   background-color: #FFFFE3; 
   padding: 1rem;
   border-radius: 0.3em;
@@ -391,6 +398,7 @@ th {
   color: #333;
 }
 
+/*==============*/
 
 /* Base: Mobile first (default styles) */
 .gallery-wrapper {
@@ -399,7 +407,7 @@ th {
   padding: 10px;     /* tighter padding for mobile */
 }
 
-
+/*================*/
 /*========Media Queries===========*/
 
 
@@ -496,6 +504,9 @@ th {
     padding: 20px;
   }
 }
+
+
+
 
 
 
