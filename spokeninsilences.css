@@ -7,13 +7,6 @@ body {
   font-family: 'Times Roman', serif;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
 
 /* ===== Banner Styles ===== */
 .banner {
@@ -189,6 +182,7 @@ footer {
 }
 .art-item {
   width: 12
+
 
 
 
