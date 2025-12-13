@@ -38,7 +38,7 @@ body {
 	font-weight: bold;
 	margin-top: 10px; /* Adds space below the Banner*/
 	margin-right: 20px;
-	padding: 20px;
+	
 }
 nav a { 
  margin-right: 20px;
@@ -509,6 +509,7 @@ th {
     padding: 20px;
   }
 }
+
 
 
 
